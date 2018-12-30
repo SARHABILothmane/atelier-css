@@ -10,51 +10,56 @@
 /* General */
 
 body {
-  background-image: url("../images/bg-tile.gif");
+
+   background-image: url("../images/bg-tile.gif");
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizelegibility;
 }
-#hero {
-  background-image: url("../images/bg-tile-yellow.gif");
-}
+
 .container {
 
+   color: #4b2707;
+
 }
-li{
-   display: inline;
-   padding: 10px;
-   color: #d17f38;
+.main{
+  /*background-image: :url("../images/logo.png");
+  text-align: center;
+  content: url("../images/tiny-donut.png")
+   color:#d17f38; */
+  
+}
 
-    }
-
-
-
+.clearfix{
+  
+} 
 
 
 /* Typography */
 
 h1, h2 {
-font-family: "Love Ya Like A Sister";
+
+   color: #d17f38 ;
+   
 }
+/* content: url("../images/header-divider.png");*/
 
 h1 {
-text-align: center;
-color:#d17f38;
-background-image: url("../images/header-divider.png");
-background-repeat: no-repeat;
-background-position: center;
-padding-bottom: 50px;
-
+   background-image: url("../images/header-divider.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position: bottom ;
+   padding-bottom: 15px;
+  text-align: center;
+font-family: Love Ya Like A Sister;
 }
 
 h1 em {
-color:#4b2707;
-    
+color : black;
 }
 
 h2 {
-  color: #d17f38;
-  padding-left: 195px;
+   margin-left: 4px;
+   
 
 }
 
@@ -63,77 +68,117 @@ h3 {
 }
 
 p.lead {
-text-align: center;
-font-size: 20px;
-color:#4b2707;
+   text-align: center;
+font-size: 25px;
+font-family: Open Sans;
 }
 
 p {
+   /*color: #f2f3ee;/*
+    /*padding-right: 185px;*/
+
+  /* text-align: center;*/
+   
 
 }
 
 a:link, a:visited {
-color:#d17f38
+   color:#d17f38; 
+   /*padding-top:500px;*/
+
+
 }
 
 a:hover {
 
+
 }
 
 hr {
-background-image:url("../images/divider.png");
-height: 40px;
-background-repeat: no-repeat;
-background-position: center;
-border:0;
+   height: 30px;
+   content:url("../images/divider.png"); 
+   border:0px;
+   /*background-image: url(../images/divider.png);
+   background-repeat: no-repeat;
+   background-position: center;*/
+   
 }
 
 
 /* Header */
 
 header nav {
+    text-align: center;
+    padding-top: 14px;
+    color: #d17f38;
+    /*background-image:url("../images/header-divider.png");*/
+    /*background-repeat: repeat-x;*/
 
 }
 
 header nav ul {
-text-align: center;
+position: relative;
+bottom: 40px;
 }
 
 header nav ul li {
+   display: inline;
+
+     padding: 30px;
+     padding-left: 40px;
 
 
 }
 
 header nav ul li a {
-color : #d17f38;
-text-decoration: none;
+   text-decoration: none;
+   /*padding :: 40px;*/
+   color:#d17f38;
+
 }
 
 header nav ul li a:hover {
-
+background-image: url("../images/tiny-donut.png");
+background-repeat: no-repeat;
+background-position:center;
+padding-top: 28px;
+   color:#4b2707;
 }
-header nav ul li#logo a {content: url("../images/logo.png");position: relative;
+
+header nav ul li#logo a {
+    content: url("../images/logo.png");
+    position: relative;
+    top : 40px;
+
 
 }
 
 header nav ul li#logo a:hover {
-content: url("../images/logo-hover.png");
+   content: url("../images/logo-hover.png");
+   background-image: none;
 }
 
 
 /* Hero */
 
+#hero {
+   background-image: url("../images/bg-tile-yellow.gif");
+   text-align: center;
 
-#hero .container {
-  text-align: center;
+
+}
+
+#hero .container { 
+
+
 
 }
 
 #hero .large-ribbon {
 content: url("../images/fresh-whole-ingredients.png");
-top: 20%;
-left: 77%;
 position: absolute;
+top: 160px;
+right: 100px;
 
 }
 
@@ -141,67 +186,75 @@ position: absolute;
 /* The Whole Story */
 
 #story-excerpt {
-float: left;
+   float: left;
+   width: 44%;
+  /* position: relative;*/
+   /*text-align: 50px;*/
+   
+   
+  padding-left:10%;
+  padding-right: 3%;
+ 
+   
 
-width: 39%;
-
-margin-left: 197px;
 }
 
 #best-donut {
-float: right;
-width: 18%;
-background-image: url("../images/award.png");
-background-repeat: no-repeat;
-margin-right: 152px;
-padding-left: 159px;
-margin-top: 0;
-background-position-y: 21px;
-    
+   float: left;
+   width: 26%;
+   /*position: relative;*/
+   background-image: url(../images/award.png);
+   background-repeat: no-repeat;
+   /*background-position: top-left;*/
+   
+   /*margin-right: 22px;*/
+   padding-left:11%;
+
+
+
+
 }
 /* News & Events */
 
 #articles {
   font-size: 12px;
-  width: 30%;
-  margin-left: 197px;
   float: left;
-
+  width: 30%;
+  margin-left: 197px;    
 }
 
 #feature-image {
-  width: 50%;
-  float: right;
-
+   width: 50%;
+   float: right ; 
 }
 
 #news-events article {
-
-
+  
 }
 
 #news-events article.news {
-
-  background-image: url(../images/icon-news.png);
-  background-repeat: no-repeat;
-  padding-left: 60px;
-
+   background-image:url(../images/icon-news.png) ;
+   background-repeat: no-repeat;
+   padding-left: 60px;
+   
 }
 
 #news-events article.event {
-
-  background-image: url(../images/icon-calendar.png);
-  background-repeat: no-repeat;
-  padding-left: 60px;
-
+   background-image: url(../images/icon-calendar.png) ;
+   background-repeat: no-repeat;
+    padding-left: 60px;
+  
 }
 
 #news-events header time {
-  color: #d17f38;
+   color: #e8c04f;
+   font-size: 12px;
+   padding-top: 12px;
 
 }
 
 #news-events section.excerpt {
+
 
 }
 
@@ -213,6 +266,8 @@ background-position-y: 21px;
 /* Footer */
 
 footer.main {
+    background-image: url("../images/bg-tile-brown.gif");
+  
 
 }
 
@@ -221,14 +276,33 @@ footer.main a:hover {
 }
 
 #uncopyright, #credits {
+   font-size: 10px;
+   color: #f2f3ee;
 
 }
 
 #uncopyright {
+   float: left;
+    background-image: url("../images/icon-recycle.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 50px;
+    margin-left: 130px;
+
 
 }
 
 #credits {
+   width: 150px;
+   float: right;
+    background-image: url("../images/icon-apple.png");
+     background-repeat: no-repeat;
+     background-position: left;
+     margin-right: 266px;
+     padding-left: 50px;
+     margin-top: 5px;
+
+
 
 }
 
@@ -244,3 +318,8 @@ footer.main a:hover {
 	}
 * html .group             { zoom: 1; } /* IE6 */
 *:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
